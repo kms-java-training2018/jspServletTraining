@@ -35,5 +35,14 @@
       <servlet-name>Task1Servlet</servlet-name>
       <url-pattern>/task1</url-pattern>
   </servlet-mapping>
+  <servlet>
+      <display-name>BeanSampleServlet</display-name>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <servlet-class>bean.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <url-pattern>/bean</url-pattern>
+  </servlet-mapping>
 
 </web-app>
