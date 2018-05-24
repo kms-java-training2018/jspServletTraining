@@ -39,6 +39,32 @@
       <url-pattern>/task1Init</url-pattern>
   </servlet-mapping>
 
+<servlet>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <servlet-class>Bean.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <url-pattern>/beanSample</url-pattern>
+  </servlet-mapping>
 
+  <servlet>
+      <display-name>LogInServlet</display-name>
+      <servlet-name>LogInServlet</servlet-name>
+      <servlet-class>servlet.LogInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>LogInServlet</servlet-name>
+      <url-pattern>/logIn</url-pattern>
+  </servlet-mapping>
 
+<servlet>
+      <display-name>FileServlet</display-name>
+      <servlet-name>FileServlet</servlet-name>
+      <servlet-class>servlet.FileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>FileServlet</servlet-name>
+      <url-pattern>/logIn2</url-pattern>
+  </servlet-mapping>
 </web-app>

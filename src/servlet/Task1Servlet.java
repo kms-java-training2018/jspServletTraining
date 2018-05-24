@@ -18,6 +18,7 @@ public class Task1Servlet extends HttpServlet {
         String name = request.getParameter("name");
         String old = request.getParameter("old");
 
+
         request.setAttribute("name", name);
         request.setAttribute("old", old);
         request.getRequestDispatcher("/task1Disp.jsp").forward(request, response);
