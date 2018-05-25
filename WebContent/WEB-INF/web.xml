@@ -37,4 +37,34 @@
       <servlet-name>Task1Servlet</servlet-name>
       <url-pattern>/task1</url-pattern>
   </servlet-mapping>
+
+  <!-- bean用 -->
+  <servlet>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <servlet-class>servlet.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <url-pattern>/BeanSample</url-pattern>
+  </servlet-mapping>
+
+<!-- task2のServletFirst用 -->
+  <servlet>
+      <servlet-name>Task2ServletFirst</servlet-name>
+      <servlet-class>task2.Task2ServletFirst</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Task2ServletFirst</servlet-name>
+      <url-pattern>/task2First</url-pattern>
+  </servlet-mapping>
+
+<!-- task2のServletSecond用 -->
+  <servlet>
+      <servlet-name>Task2ServletSecond</servlet-name>
+      <servlet-class>task2.Task2ServletSecond</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Task2ServletSecond</servlet-name>
+      <url-pattern>/task2Second</url-pattern>
+  </servlet-mapping>
 </web-app>
