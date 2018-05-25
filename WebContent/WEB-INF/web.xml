@@ -1,30 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>jspServletTraining</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  <servlet>
-      <display-name>Sample2Servlet</display-name>
-      <servlet-name>Sample2Servlet</servlet-name>
-      <servlet-class>servlet.Sample2Servlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-      <servlet-name>Sample2Servlet</servlet-name>
-      <url-pattern>/sample2</url-pattern>
-  </servlet-mapping>
-  <servlet>
-      <display-name>Task1Servlet</display-name>
-      <servlet-name>Task1Servlet</servlet-name>
-      <servlet-class>servlet.Task1Servlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-      <servlet-name>Task1Servlet</servlet-name>
-      <url-pattern>/task1</url-pattern>
-  </servlet-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+    id="WebApp_ID" version="3.1">
+    <display-name>jspServletTraining</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- サンプル2 -->
+    <servlet>
+        <display-name>Sample2Servlet</display-name>
+        <servlet-name>Sample2Servlet</servlet-name>
+        <servlet-class>servlet.Sample2Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Sample2Servlet</servlet-name>
+        <url-pattern>/sample2</url-pattern>
+    </servlet-mapping>
+
+    <!-- 課題1 -->
+    <servlet>
+        <display-name>Task1Servlet</display-name>
+        <servlet-name>Task1Servlet</servlet-name>
+        <servlet-class>servlet.Task1Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Task1Servlet</servlet-name>
+        <url-pattern>/task1</url-pattern>
+    </servlet-mapping>
+
+    <!-- Java Beanサンプル -->
+    <servlet>
+        <display-name>BeanSampleServlet</display-name>
+        <servlet-name>BeanSampleServlet</servlet-name>
+        <servlet-class>servlet.BeanSampleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BeanSampleServlet</servlet-name>
+        <url-pattern>/BeanSample</url-pattern>
+    </servlet-mapping>
+
+    <!-- 課題2ログイン -->
+    <servlet>
+        <display-name>Task2LoginServlet</display-name>
+        <servlet-name>Task2LoginServlet</servlet-name>
+        <servlet-class>servlet.Task2LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Task2LoginServlet</servlet-name>
+        <url-pattern>/task2Login</url-pattern>
+    </servlet-mapping>
+
+    <!-- 課題2ファイル読み取り -->
+    <servlet>
+        <display-name>Task2ReaderServlet</display-name>
+        <servlet-name>Task2ReaderServlet</servlet-name>
+        <servlet-class>servlet.Task2ReaderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Task2ReaderServlet</servlet-name>
+        <url-pattern>/task2Reader</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
 </web-app>
