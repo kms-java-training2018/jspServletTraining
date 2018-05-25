@@ -45,4 +45,44 @@
       <url-pattern>/bean</url-pattern>
   </servlet-mapping>
 
+   <servlet>
+      <display-name>RoginServlet</display-name>
+      <servlet-name>RoginServlet</servlet-name>
+      <servlet-class>rogin.RoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>RoginServlet</servlet-name>
+      <url-pattern>/rogin</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+      <display-name>FileServlet</display-name>
+      <servlet-name>FileServlet</servlet-name>
+      <servlet-class>rogin.FileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>FileServlet</servlet-name>
+      <url-pattern>/file</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+      <display-name>Rogout</display-name>
+      <servlet-name>Rogout</servlet-name>
+      <servlet-class>rogin.Rogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Rogout</servlet-name>
+      <url-pattern>/rogout</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+      <display-name>newR</display-name>
+      <servlet-name>newR</servlet-name>
+      <servlet-class>rogin.NewRogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>newR</servlet-name>
+      <url-pattern>/newRogin</url-pattern>
+  </servlet-mapping>
+
 </web-app>
