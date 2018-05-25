@@ -38,4 +38,35 @@
   	<servlet-name>Task1Servlet</servlet-name>
   	<url-pattern>/task1</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<display-name>BeanSampleServlet</display-name>
+  	<servlet-name>BeanSampleServlet</servlet-name>
+  	<servlet-class>servlet.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BeanSampleServlet</servlet-name>
+  	<url-pattern>/bean</url-pattern>
+  </servlet-mapping>
+
+<!-- Task2LoginServlet -->
+  <servlet>
+  	<display-name>Task2LoginServlet</display-name>
+  	<servlet-name>Task2LoginServlet</servlet-name>
+  	<servlet-class>servlet.Task2LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Task2LoginServlet</servlet-name>
+  	<url-pattern>/task2Login</url-pattern>
+  </servlet-mapping>
+
+<!-- Task2FileCheckServlet -->
+  <servlet>
+  	<display-name>Task2FileCheckServlet</display-name>
+  	<servlet-name>Task2FileCheckServlet</servlet-name>
+  	<servlet-class>servlet.Task2FileCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Task2FileCheckServlet</servlet-name>
+  	<url-pattern>/task2FileCheck</url-pattern>
+  </servlet-mapping>
 </web-app>
