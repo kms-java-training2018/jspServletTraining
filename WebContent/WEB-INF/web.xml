@@ -11,12 +11,30 @@
   </welcome-file-list>
 
   <servlet>
-      <servlet-name>Task1Servlet</servlet-name>
-      <servlet-class>servlet.Task1Servlet</servlet-class>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <servlet-class>servlet.BeanSampleServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-      <servlet-name>Task1Servlet</servlet-name>
-      <url-pattern>/task1</url-pattern>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <url-pattern>/beanSample</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <servlet-name>LoginServlet</servlet-name>
+      <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>LoginServlet</servlet-name>
+      <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <servlet-name>FileReadServlet</servlet-name>
+      <servlet-class>servlet.FileReadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>FileReadServlet</servlet-name>
+      <url-pattern>/fileread</url-pattern>
   </servlet-mapping>
 
 </web-app>
