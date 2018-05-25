@@ -10,7 +10,7 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
 
-
+<!-- 【sample】 -->
   <servlet>
     <servlet-name>SampleServlet</servlet-name>
     <servlet-class>servlet.SampleServlet</servlet-class>
@@ -42,5 +42,42 @@
     <url-pattern>/task1</url-pattern>
   </servlet-mapping>
 
+<!-- 【BeanSampleServlet】 -->
+  <servlet>
+    <display-name>BeanSampleServlet</display-name>
+    <servlet-name>BeanSampleServlet</servlet-name>
+    <servlet-class>bean.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BeanSampleServlet</servlet-name>
+    <url-pattern>/beanSample</url-pattern>
+  </servlet-mapping>
+
+
+<!-- 【以下課題２で使用】 -->
+
+<!-- 【LoginServlet】 -->
+  <servlet>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+<!-- 【ReadFileServlet】 -->
+  <servlet>
+    <display-name>ReadFileServlet</display-name>
+    <servlet-name>ReadFileServlet</servlet-name>
+    <servlet-class>servlet.ReadFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadFileServlet</servlet-name>
+    <url-pattern>/readFile</url-pattern>
+  </servlet-mapping>
+
+<!-- 【課題２で使用ここまで】 -->
 
 </web-app>
