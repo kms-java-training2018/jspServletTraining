@@ -7,12 +7,16 @@
 <title>あなたの名前と年齢</title>
 </head>
 <body>
-<form action="/jspServletTraining/task1" method="POST">
-<p>お名前は？
-<input type="text" name ="name">
-<p>年齢は？
+<form action="/jspServletTraining/sample2" method="GET">
+<%!String name = "大西泰匡"; %><%--自分の名前 --%>
+<p>私の名前は
+<br><%= name %>です
+</p>
+<p>おいくつですか</p>
 <input type="text" name ="age">歳
-
+<p>性別は？(男or女)
+<input type="text" name ="gender">
+<p>
 <input type="submit" value="送信する">
 </form>
 </body>

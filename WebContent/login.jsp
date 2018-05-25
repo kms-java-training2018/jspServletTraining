@@ -4,16 +4,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>あなたの名前と年齢</title>
+<title>Login</title>
 </head>
-<body>
-<form action="/jspServletTraining/task1" method="POST">
-<p>お名前は？
-<input type="text" name ="name">
-<p>年齢は？
-<input type="text" name ="age">歳
 
+<body>
+<form action="/jspServletTraining/login" method="POST">
+<p>Username</p>
+<input type="text" name ="name">
+<p>Password</p>
+<input type="text" name ="pass">
+<p>
+<p>
 <input type="submit" value="送信する">
+</p>
+</form>
+<form action="/jspServletTraining/newAccount.jsp">
+<button>
+新規登録※未実装
+</button>
 </form>
 </body>
 </html>

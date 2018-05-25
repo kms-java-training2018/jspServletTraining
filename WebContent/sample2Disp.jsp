@@ -4,16 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>あなたの名前と年齢</title>
+<title>年齢を表示します</title>
 </head>
 <body>
-<form action="/jspServletTraining/task1" method="POST">
-<p>お名前は？
-<input type="text" name ="name">
-<p>年齢は？
-<input type="text" name ="age">歳
 
-<input type="submit" value="送信する">
-</form>
+<p>私の年齢は
+<br>${age}です
+<p>性別は
+<br>${gender}です。
+<p>あなたは
+<br>${adult}です。
+
 </body>
 </html>
