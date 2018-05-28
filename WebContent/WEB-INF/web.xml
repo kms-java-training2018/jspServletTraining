@@ -42,5 +42,54 @@
       <url-pattern>/task1</url-pattern>
   </servlet-mapping>
 
+  <!-- BeanSampleServlet用 -->
+
+  <servlet>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <servlet-class>Beans.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <url-pattern>/BeanSample</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- 課題用 -->
+
+  <servlet>
+      <display-name>LogInCheck</display-name>
+      <servlet-name>LogInCheck</servlet-name>
+      <servlet-class>logInFind.LogInCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>LogInCheck</servlet-name>
+      <url-pattern>/logIn</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <display-name>FindFile</display-name>
+      <servlet-name>FindFile</servlet-name>
+      <servlet-class>logInFind.FindFile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>FindFile</servlet-name>
+      <url-pattern>/find</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+      <display-name>result</display-name>
+      <servlet-name>result</servlet-name>
+      <servlet-class>logInFind.result</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>result</servlet-name>
+      <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+
 
 </web-app>
