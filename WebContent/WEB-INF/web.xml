@@ -38,4 +38,49 @@
     <servlet-name>Task1Servlet</servlet-name>
     <url-pattern>/Task1Servlet</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <display-name>BeanSampleServlet</display-name>
+    <servlet-name>BeanSampleServlet</servlet-name>
+    <servlet-class>servlet.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BeanSampleServlet</servlet-name>
+    <url-pattern>/BeanSampleServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <display-name>LoginCollateServlet</display-name>
+    <servlet-name>LoginCollateServlet</servlet-name>
+    <servlet-class>servlet.LoginCollateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginCollateServlet</servlet-name>
+    <url-pattern>/getLogin</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <display-name>FileReadServlet</display-name>
+    <servlet-name>FileReadServlet</servlet-name>
+    <servlet-class>servlet.FileReadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileReadServlet</servlet-name>
+    <url-pattern>/file</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+
+
 </web-app>
