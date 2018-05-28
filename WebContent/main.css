@@ -1,0 +1,11 @@
+@charset "UTF-8";
+#main{
+    background: #FFEEFF;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 15px #FF6694;
+  font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+}
