@@ -4,16 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>あなたの名前と年齢</title>
+<title>あなたの名前</title>
 </head>
 <body>
-<form action="/jspServletTraining/task1" method="POST">
-<p>お名前は？
-<input type="text" name ="name">
-<p>年齢は？
-<input type="text" name ="age">歳
-
-<input type="submit" value="送信する">
-</form>
+<%!String name = "大西泰匡"; %><%--自分の名前 --%>
+<p>私の名前は
+<br><%= name %>です
+</p>
 </body>
 </html>

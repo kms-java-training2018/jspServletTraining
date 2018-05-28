@@ -4,16 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>あなたの名前と年齢</title>
+<title>Insert title here</title>
 </head>
 <body>
-<form action="/jspServletTraining/task1" method="POST">
-<p>お名前は？
-<input type="text" name ="name">
-<p>年齢は？
-<input type="text" name ="age">歳
-
-<input type="submit" value="送信する">
+<form action="/jspServletTraining/newAccount" method="POST">
+<p>Username</p>
+<input type="text" name ="newName">
+<p>Password</p>
+<input type="text" name ="newPass">
+<p>
+<input type="submit" value="新規登録">
 </form>
 </body>
 </html>

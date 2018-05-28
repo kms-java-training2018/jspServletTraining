@@ -35,6 +35,59 @@
    	<url-pattern>/task1</url-pattern>
   </servlet-mapping>
 
+	<servlet>
+   	<servlet-name>BeanSampleServlet</servlet-name>
+  	<servlet-class>servlet.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   	<servlet-name>BeanSampleServlet</servlet-name>
+   	<url-pattern>/beansample</url-pattern>
+  </servlet-mapping>
+
+
+	<servlet>
+	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>servlet.LoginServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   	<servlet-name>LoginServlet</servlet-name>
+   	<url-pattern>/login</url-pattern>
+  	</servlet-mapping>
+
+
+  	<servlet>
+	<servlet-name>NewAccountServlet</servlet-name>
+  	<servlet-class>servlet.NewAccountServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   	<servlet-name>NewAccountServlet</servlet-name>
+   	<url-pattern>/newAccount</url-pattern>
+  	</servlet-mapping>
+
+
+  	<servlet>
+	<servlet-name>FileReadServlet</servlet-name>
+  	<servlet-class>servlet.FileReadServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   	<servlet-name>FileReadServlet</servlet-name>
+   	<url-pattern>/fileread</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+	<servlet-name>PostScriptServlet</servlet-name>
+  	<servlet-class>servlet.PostScriptServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   	<servlet-name>PostScriptServlet</servlet-name>
+   	<url-pattern>/postscript</url-pattern>
+  	</servlet-mapping>
+
+  	<session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+
+
 
 </web-app>
 
