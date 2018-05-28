@@ -27,7 +27,7 @@
     <servlet-mapping>
         <servlet-name>Sample2Servlet</servlet-name>
         <url-pattern>/sample2</url-pattern>
-      </servlet-mapping>
+    </servlet-mapping>
 
     <!-- 課題1 -->
     <servlet>
@@ -39,4 +39,32 @@
         <url-pattern>/task1Init2</url-pattern>
     </servlet-mapping>
 
+    <!-- Beanサンプル -->
+    <servlet>
+        <servlet-name>BeanSampleServlet</servlet-name>
+        <servlet-class>servlet.BeanSampleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BeanSampleServlet</servlet-name>
+        <url-pattern>/beanSample</url-pattern>
+    </servlet-mapping>
+
+    <!-- 課題2 -->
+    <!-- login.jsp -->
+    <servlet>
+        <servlet-name>FileServlet</servlet-name>
+        <servlet-class>servlet.FileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileServlet</servlet-name>
+        <url-pattern>/File1</url-pattern>
+    </servlet-mapping>
+    <!-- file.jsp -->
+    <servlet>
+    <servlet-name>FileViewServlet</servlet-name>
+    <servlet-class>servlet.FileViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>FileViewServlet</servlet-name>
+    <url-pattern>/File</url-pattern></servlet-mapping>
 </web-app>
