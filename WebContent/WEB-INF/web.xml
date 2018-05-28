@@ -10,16 +10,48 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
 
-
+<!-- 名前と年齢 -->
   <servlet>
-      <display-name>Task1Servlet</display-name>
-      <servlet-name>Task1Servlet</servlet-name>
-      <servlet-class>servlet.Task1Servlet</servlet-class>
+      <display-name>BeanSampleServlet</display-name>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <servlet-class>bean.BeanSampleServle</servlet-class>
   </servlet>
-
   <servlet-mapping>
-      <servlet-name>Task1Servlet</servlet-name>
-    <url-pattern>/task1Init</url-pattern>
+    <servlet-name>BeanSampleServlet</servlet-name>
+    <url-pattern>/beanSample</url-pattern>
+  </servlet-mapping>
+
+
+<!-- ログイン課題 -->
+<servlet>
+      <servlet-name>LoginServlet</servlet-name>
+      <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+
+<!-- ファイル指定 -->
+<!-- <servlet>
+      <servlet-name>LoginServletDisp</servlet-name>
+      <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginFile</url-pattern>
+  </servlet-mapping> -->
+
+
+<!-- ファイル表示画面 -->
+<servlet>
+      <servlet-name>FileReaderServlet</servlet-name>
+      <servlet-class>servlet.FileReaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileReaderServlet</servlet-name>
+    <url-pattern>/loginFileDisp</url-pattern>
   </servlet-mapping>
 
 
