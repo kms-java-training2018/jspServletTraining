@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>jspServletTraining</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+      <servlet-name>SampleServlet</servlet-name>
+      <servlet-class>servlet.SampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>SampleServlet</servlet-name>
+      <url-pattern>/sample</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <display-name>Sample2Servlet</display-name>
+      <servlet-name>Sample2Servlet</servlet-name>
+      <servlet-class>servlet.Sample2Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Sample2Servlet</servlet-name>
+      <url-pattern>/sample2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <display-name>Task1Servlet</display-name>
+      <servlet-name>Task1Servlet</servlet-name>
+      <servlet-class>servlet.Task1Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Task1Servlet</servlet-name>
+      <url-pattern>/task1Init</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <servlet-class>Bean.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>BeanSampleServlet</servlet-name>
+      <url-pattern>/beanSample</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <display-name>LogInServlet</display-name>
+      <servlet-name>LogInServlet</servlet-name>
+      <servlet-class>servlet.LogInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>LogInServlet</servlet-name>
+      <url-pattern>/logIn</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+      <display-name>FileServlet</display-name>
+      <servlet-name>FileServlet</servlet-name>
+      <servlet-class>servlet.FileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>FileServlet</servlet-name>
+      <url-pattern>/logIn2</url-pattern>
+  </servlet-mapping>
+</web-app>
