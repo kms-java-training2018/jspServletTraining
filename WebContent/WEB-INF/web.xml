@@ -31,6 +31,7 @@
         <url-pattern>/sample2</url-pattern>
     </servlet-mapping>
 
+    <!-- task1 -->
     <servlet>
         <servlet-name>Task1Servlet</servlet-name>
         <servlet-class>servlet.Task1Servlet</servlet-class>
@@ -38,5 +39,40 @@
     <servlet-mapping>
         <servlet-name>Task1Servlet</servlet-name>
         <url-pattern>/task1Init</url-pattern>
+    </servlet-mapping>
+
+    <!-- BeanSampleservlet -->
+    <servlet>
+        <servlet-name>BeanSampleservlet</servlet-name>
+        <servlet-class>servlet.BeanSampleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BeanSampleservlet</servlet-name>
+        <url-pattern>/BeanSample</url-pattern>
+    </servlet-mapping>
+
+    <!-- ログインチェックのサーブレット -->
+    <servlet>
+        <servlet-name>LoginCheckServlet</servlet-name>
+        <servlet-class>servlet.LoginCheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginCheckServlet</servlet-name>
+        <url-pattern>/loginCheck</url-pattern>
+    </servlet-mapping>
+
+    <!-- セッションの有効時間 -->
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+
+    <!-- FileDesServletのサーブレット -->
+    <servlet>
+        <servlet-name>FileDesServlet</servlet-name>
+        <servlet-class>servlet.FileDesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileDesServlet</servlet-name>
+        <url-pattern>/fileDes</url-pattern>
     </servlet-mapping>
 </web-app>
