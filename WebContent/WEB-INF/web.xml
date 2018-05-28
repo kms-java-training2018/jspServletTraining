@@ -40,4 +40,33 @@
    <url-pattern>/Task1Servlet</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+   <display-name>BeanSampleServlet</display-name>
+   <servlet-name>BeanSampleServlet</servlet-name>
+   <servlet-class>servlet.BeanSampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>BeanSampleServlet</servlet-name>
+   <url-pattern>/BeanSampleServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+   <display-name>LoginServlet</display-name>
+   <servlet-name>LoginServlet</servlet-name>
+   <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>LoginServlet</servlet-name>
+   <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+   <display-name>FileServlet</display-name>
+   <servlet-name>FileServlet</servlet-name>
+   <servlet-class>servlet.FileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>FileServlet</servlet-name>
+   <url-pattern>/FileServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
